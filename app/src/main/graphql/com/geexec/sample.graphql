@@ -1,0 +1,17 @@
+query WorkList {
+    works {
+        id
+        title
+        permlink
+        updatedAt
+        description
+    }
+}
+
+query GetWork($id:ID!) {
+    work(id: $id) {
+        id
+        title
+        permlink
+    }
+}
